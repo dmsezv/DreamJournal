@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import SwiftUI
+import UIKit
 
-extension Color {
-    init?(hexString: String) {
+extension UIColor {
+    convenience init?(hexString: String) {
         var chars = Array(hexString.hasPrefix("#") ? hexString.dropFirst() : hexString[...])
         let red, green, blue, alpha: CGFloat
         switch chars.count {
@@ -28,6 +28,6 @@ extension Color {
         default:
             return nil
         }
-        self.init(UIColor(red: red, green: green, blue: blue, alpha: alpha))
+        self.init(red: red, green: green, blue:  blue, alpha: alpha)
     }
 }

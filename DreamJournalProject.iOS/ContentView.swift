@@ -9,15 +9,29 @@
 import SwiftUI
 
 
-
 struct ContentView: View {
+    
+    @State private var searchQuery: String = ""
+    
+    init() {
+        UITableView.appearance().separatorStyle = .none
+    }
+    
     var body: some View {
-        NavigationView {
-            Text("")
-//            List {
-//
-//            }
+        VStack {
+            List {
+                 ForEach(1...10, id: \.self) {_ in
+                    PostView()
+                    .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
+                        .background(Color.clear)
+                 }
+                //.listRowBackground(Color.clear)
+            }
+        
+            //.colorScheme(/*@START_MENU_TOKEN@*/.light/*@END_MENU_TOKEN@*/)
         }
+        //.edgesIgnoringSafeArea(.all)
+        .background(Color.red)
     }
 }
 

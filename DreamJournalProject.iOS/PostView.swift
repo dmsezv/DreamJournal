@@ -10,7 +10,7 @@ import SwiftUI
 
 struct PostView: View {
     var body: some View {
-        HStack(alignment: .center, spacing: 17) {
+        HStack(alignment: .center, spacing: 16) {
             VStack(alignment: .trailing, spacing: 0) {
                 VStack(alignment: .center, spacing: 8) {
                     VStack(alignment: .center, spacing: 0) {
@@ -34,11 +34,12 @@ struct PostView: View {
             .foregroundColor(Color(red: 119/255, green: 108/255, blue: 150/255))
             .lineLimit(3)
             .font(.system(size: 15))
-                .padding(.trailing, 22)
+                .padding(.trailing, 16)
         }
-        .frame(width: CGFloat(360), height: CGFloat(92), alignment: .center)
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 88, maxHeight: 88)
         .background(Color(red: 44/255, green: 33/255, blue: 57/255))
         .cornerRadius(16)
+        .listRowBackground(Color.clear)
     }
 }
 
