@@ -15,23 +15,39 @@ struct ContentView: View {
     
     init() {
         UITableView.appearance().separatorStyle = .none
+        UITableView.appearance().backgroundColor = .clear
+        //UITableView.appearance().backgroundColor = UIColor.clear
+        UITableViewCell.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.black]
     }
     
     var body: some View {
-        VStack {
+        NavigationView {
             List {
-                 ForEach(1...10, id: \.self) {_ in
-                    PostView()
+                
+
+                Spacer()
+                Text("Collection")
+                    .font(.system(size: 18, weight: .bold, design: .default))
                     .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
-                        .background(Color.clear)
-                 }
-                //.listRowBackground(Color.clear)
+                    
+                
+                ListDatePickerView()
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 24, trailing: 0))
+                
+                ForEach(1...20, id: \.self) { _ in
+                    PostView()
+                        .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
+                }
+                
             }
-        
-            //.colorScheme(/*@START_MENU_TOKEN@*/.light/*@END_MENU_TOKEN@*/)
+            .navigationBarTitle("Dream journal")
+            
+            //.navigationBarHidden(true)
+            
         }
         //.edgesIgnoringSafeArea(.all)
-        .background(Color.red)
     }
 }
 

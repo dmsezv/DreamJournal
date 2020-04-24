@@ -15,6 +15,9 @@
 		4D5A33F92450AE70000B526F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A33F72450AE70000B526F /* LaunchScreen.storyboard */; };
 		4D5A34012450D3DA000B526F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34002450D3DA000B526F /* PostView.swift */; };
 		4D9344F12451F53300AB8C5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9344F02451F53300AB8C5B /* Extensions.swift */; };
+		4DA7462224532061001BB930 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7462124532061001BB930 /* MainView.swift */; };
+		4DA7462424538F36001BB930 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7462324538F36001BB930 /* DatePickerView.swift */; };
+		4DA74628245396B8001BB930 /* ListDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA74627245396B8001BB930 /* ListDatePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		4D5A33FA2450AE70000B526F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5A34002450D3DA000B526F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		4D9344F02451F53300AB8C5B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		4DA7462124532061001BB930 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4DA7462324538F36001BB930 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		4DA74627245396B8001BB930 /* ListDatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDatePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +69,15 @@
 				4D5A33EC2450AE6D000B526F /* AppDelegate.swift */,
 				4D9344F02451F53300AB8C5B /* Extensions.swift */,
 				4D5A33EE2450AE6D000B526F /* SceneDelegate.swift */,
+				4DA7462124532061001BB930 /* MainView.swift */,
+				4DA7462324538F36001BB930 /* DatePickerView.swift */,
 				4D5A34002450D3DA000B526F /* PostView.swift */,
 				4D5A33F02450AE6D000B526F /* ContentView.swift */,
 				4D5A33F22450AE70000B526F /* Assets.xcassets */,
 				4D5A33F72450AE70000B526F /* LaunchScreen.storyboard */,
 				4D5A33FA2450AE70000B526F /* Info.plist */,
 				4D5A33F42450AE70000B526F /* Preview Content */,
+				4DA74627245396B8001BB930 /* ListDatePickerView.swift */,
 			);
 			path = DreamJournalProject.iOS;
 			sourceTree = "<group>";
@@ -153,9 +162,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D9344F12451F53300AB8C5B /* Extensions.swift in Sources */,
+				4DA7462224532061001BB930 /* MainView.swift in Sources */,
 				4D5A33ED2450AE6D000B526F /* AppDelegate.swift in Sources */,
 				4D5A33EF2450AE6D000B526F /* SceneDelegate.swift in Sources */,
+				4DA7462424538F36001BB930 /* DatePickerView.swift in Sources */,
 				4D5A34012450D3DA000B526F /* PostView.swift in Sources */,
+				4DA74628245396B8001BB930 /* ListDatePickerView.swift in Sources */,
 				4D5A33F12450AE6D000B526F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dmitriizverev.DreamJournalProject-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dmitriizverev.DreamJournalProject-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

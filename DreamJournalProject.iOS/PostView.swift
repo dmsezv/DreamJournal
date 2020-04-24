@@ -39,7 +39,6 @@ struct PostView: View {
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 88, maxHeight: 88)
         .background(Color(red: 44/255, green: 33/255, blue: 57/255))
         .cornerRadius(16)
-        .listRowBackground(Color.clear)
     }
 }
 
