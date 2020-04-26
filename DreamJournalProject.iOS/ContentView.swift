@@ -9,9 +9,48 @@
 import SwiftUI
 
 
+struct SearchBar: UIViewRepresentable {
+
+    @Binding var text: String
+    var placeholder: String
+
+    class Coordinator: NSObject, UISearchBarDelegate {
+
+        @Binding var text: String
+
+        init(text: Binding<String>) {
+            _text = text
+        }
+
+        func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+            text = searchText
+        }
+    }
+
+    func makeCoordinator() -> SearchBar.Coordinator {
+        return Coordinator(text: $text)
+    }
+
+    func makeUIView(context: UIViewRepresentableContext<SearchBar>) -> UISearchBar {
+        let searchBar = UISearchBar(frame: .zero)
+        searchBar.delegate = context.coordinator
+        searchBar.placeholder = placeholder
+        searchBar.searchBarStyle = .minimal
+        searchBar.autocapitalizationType = .none
+        return searchBar
+    }
+
+    func updateUIView(_ uiView: UISearchBar, context: UIViewRepresentableContext<SearchBar>) {
+        uiView.text = text
+    }
+}
+
+
 struct ContentView: View {
     
     @State private var searchQuery: String = ""
+    
+    @State private var searchText : String = ""
     
     init() {
         UITableView.appearance().separatorStyle = .none
@@ -26,8 +65,11 @@ struct ContentView: View {
         NavigationView {
             List {
                 
-
+                Section(header: Text("")) {
+                    SearchBar(text: $searchText, placeholder: "Search")
+                }
                 Spacer()
+                Section(header: Text("")) {
                 Text("Collection")
                     .font(.system(size: 18, weight: .bold, design: .default))
                     .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
@@ -41,9 +83,11 @@ struct ContentView: View {
                         .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
                 }
                 
+                }
+                
             }
             .navigationBarTitle("Dream journal")
-            
+        
             //.navigationBarHidden(true)
             
         }
