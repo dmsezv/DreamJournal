@@ -14,6 +14,7 @@
 		4D5A33F62450AE70000B526F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A33F52450AE70000B526F /* Preview Assets.xcassets */; };
 		4D5A33F92450AE70000B526F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A33F72450AE70000B526F /* LaunchScreen.storyboard */; };
 		4D5A34012450D3DA000B526F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34002450D3DA000B526F /* PostView.swift */; };
+		4D66290524574B63001E1D7E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66290424574B63001E1D7E /* TabBar.swift */; };
 		4D9344F12451F53300AB8C5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9344F02451F53300AB8C5B /* Extensions.swift */; };
 		4DA7462224532061001BB930 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7462124532061001BB930 /* MainView.swift */; };
 		4DA7462424538F36001BB930 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7462324538F36001BB930 /* DatePickerView.swift */; };
@@ -30,6 +31,7 @@
 		4D5A33F82450AE70000B526F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5A33FA2450AE70000B526F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D5A34002450D3DA000B526F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		4D66290424574B63001E1D7E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4D9344F02451F53300AB8C5B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4DA7462124532061001BB930 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4DA7462324538F36001BB930 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		4D5A33EB2450AE6D000B526F /* DreamJournalProject.iOS */ = {
 			isa = PBXGroup;
 			children = (
+				4D66290624574B6E001E1D7E /* TabBar */,
 				4D5A33EC2450AE6D000B526F /* AppDelegate.swift */,
 				4D9344F02451F53300AB8C5B /* Extensions.swift */,
 				4D5A33EE2450AE6D000B526F /* SceneDelegate.swift */,
@@ -88,6 +91,14 @@
 				4D5A33F52450AE70000B526F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D66290624574B6E001E1D7E /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4D66290424574B63001E1D7E /* TabBar.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D66290524574B63001E1D7E /* TabBar.swift in Sources */,
 				4D9344F12451F53300AB8C5B /* Extensions.swift in Sources */,
 				4DA7462224532061001BB930 /* MainView.swift in Sources */,
 				4D5A33ED2450AE6D000B526F /* AppDelegate.swift in Sources */,
