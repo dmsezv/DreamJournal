@@ -65,11 +65,8 @@ struct ContentView: View {
         NavigationView {
             List {
                 
-                Section(header: Text("")) {
-                    SearchBar(text: $searchText, placeholder: "Search")
-                }
+                SearchBar(text: $searchText, placeholder: "Search")
                 Spacer()
-                Section(header: Text("")) {
                 Text("Collection")
                     .font(.system(size: 18, weight: .bold, design: .default))
                     .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
@@ -81,8 +78,6 @@ struct ContentView: View {
                 ForEach(1...20, id: \.self) { _ in
                     PostView()
                         .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
-                }
-                
                 }
                 
             }
