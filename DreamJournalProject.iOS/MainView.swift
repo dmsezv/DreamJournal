@@ -9,14 +9,20 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    @ObservedObject var viewRouter = ViewRouter()
+    
     var body: some View {
-        ZStack {
-            //ContentView()
-            Text("test")
+        /*
+        if self.viewRouter.currentView == "journal" {
+            ContentView()
+        } else if self.viewRouter.currentView == "profile" {
+            ProfileView()
+        } else {
+            AddNoteView()
         }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
-        //.edgesIgnoringSafeArea(.all)
-        .background(Color.red)
+         */
+        Text("")
     }
 }
 

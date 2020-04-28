@@ -8,56 +8,68 @@
 
 import SwiftUI
 
-enum Tab {
-    case tabJournal, tabProfile, tabAddNew
-}
-
 struct TabBar: View {
     
-    @State private var currentView: Tab = .tabJournal
+    @ObservedObject var viewRouter = ViewRouter()
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 Spacer()
-                Text("home")
+                
+                if self.viewRouter.currentView == "journal" {
+                    ContentView()
+                } else if self.viewRouter.currentView == "profile" {
+                    ProfileView()
+                } else {
+                    AddNoteView()
+                }
+                
                 Spacer()
                 HStack {
                     VStack {
-                        Image("tabJournal")
+                        Image("tab.journal")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            //.padding(.top, 3)
                             .frame(width: 44, height: 44)
-                            .background(Color.green)
+                            .foregroundColor(self.viewRouter.currentView == "journal" ? Color("tab.active") : Color("tab.inactive"))
                         Spacer()
                     }
                     .padding(.top, 3)
+                    .padding(.trailing, 34)
+                    .onTapGesture {
+                        self.viewRouter.currentView = "journal"
+                    }
                     
                     ZStack {
                         Circle()
                             .frame(width: 62, height: 62)
-                        .padding()
-                        Image(systemName: "plus.circle.fill")
+                            .foregroundColor(Color("dj.purpule"))
+                            .shadow(color: Color("dj.purpule.shadow"), radius: 5, x: 0, y: 10)
+                        Image("tab.plus")
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 75, height: 75)
-                            .foregroundColor(.blue)
+                            .frame(width: 18, height: 18)
+                            .foregroundColor(.white)
                     }
+                    .offset(y: -geometry.size.height/10/2 + 10)
+                    
                     
                     VStack {
-                        Image("tabProfile")
+                        Image("tab.profile")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            //.padding(.top, 3)
                             .frame(width: 44, height: 44)
-                            .background(Color.green)
+                            .foregroundColor(self.viewRouter.currentView == "profile" ? Color("tab.active") : Color("tab.inactive"))
                         Spacer()
                     }
                     .padding(.top, 3)
+                    .padding(.leading, 34)
+                    .onTapGesture {
+                        self.viewRouter.currentView = "profile"
+                    }
                 }
                 .frame(width: geometry.size.width, height: geometry.size.height/10)
-                .background(Color.red)
+                .background(Color.white)
             }
         }
         .edgesIgnoringSafeArea(.bottom)
