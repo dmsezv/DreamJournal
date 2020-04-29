@@ -14,11 +14,18 @@ struct TabBarView: View {
     
     var body: some View {
         GeometryReader { geometry in
+            
+            Image("background_image")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .background(Color("dj.background"))
+            .edgesIgnoringSafeArea([.top, .bottom])
+            
             VStack {
                 Spacer()
                 
                 if self.viewRouter.currentView == "journal" {
-                    ContentView()
+                    JournalView()
                 } else if self.viewRouter.currentView == "profile" {
                     ProfileView()
                 } else {
