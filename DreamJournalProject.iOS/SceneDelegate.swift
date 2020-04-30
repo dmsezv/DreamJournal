@@ -9,6 +9,12 @@
 import UIKit
 import SwiftUI
 
+class HostingController: UIHostingController<AnyView> {
+   override var preferredStatusBarStyle: UIStatusBarStyle {
+      return .lightContent
+   }
+}
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -21,11 +27,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view that provides the window contents.
         //let contentView = ContentView()
-        let journalView = JournalView()
+        //let journalView = JournalView()
+        let tabBarView = TabBarView()
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: journalView)
+            window.rootViewController = HostingController(rootView: AnyView(tabBarView))
             self.window = window
             window.makeKeyAndVisible()
         }

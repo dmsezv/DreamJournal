@@ -61,10 +61,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D5A33E02450AE6C000B526F = {
+		4D057A1B245B48DD002AF77E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				4DAD10F82458090900834874 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4D057A1C245B48F6002AF77E /* AddNewNote */ = {
+			isa = PBXGroup;
+			children = (
+				4DAD10FA24580BBC00834874 /* AddNoteView.swift */,
+			);
+			path = AddNewNote;
+			sourceTree = "<group>";
+		};
+		4D057A1D245B4904002AF77E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4D9344F02451F53300AB8C5B /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		4D5A33E02450AE6C000B526F = {
+			isa = PBXGroup;
+			children = (
 				4D5A33EB2450AE6D000B526F /* DreamJournalProject.iOS */,
 				4D5A33EA2450AE6D000B526F /* Products */,
 			);
@@ -81,14 +104,14 @@
 		4D5A33EB2450AE6D000B526F /* DreamJournalProject.iOS */ = {
 			isa = PBXGroup;
 			children = (
-				4DAD10FC245812EA00834874 /* ListJournalView */,
+				4D057A1D245B4904002AF77E /* Extension */,
+				4D057A1C245B48F6002AF77E /* AddNewNote */,
+				4D057A1B245B48DD002AF77E /* Profile */,
+				4DAD10FC245812EA00834874 /* ListJournal */,
 				4DAD10F32457FD3600834874 /* Resourses */,
 				4D66290624574B6E001E1D7E /* TabBar */,
 				4D5A33EC2450AE6D000B526F /* AppDelegate.swift */,
-				4DAD10FA24580BBC00834874 /* AddNoteView.swift */,
-				4D9344F02451F53300AB8C5B /* Extensions.swift */,
 				4D5A33EE2450AE6D000B526F /* SceneDelegate.swift */,
-				4DA7462124532061001BB930 /* MainView.swift */,
 				4D5A33F72450AE70000B526F /* LaunchScreen.storyboard */,
 				4D5A33FA2450AE70000B526F /* Info.plist */,
 				4D5A33F42450AE70000B526F /* Preview Content */,
@@ -122,9 +145,10 @@
 			path = Resourses;
 			sourceTree = "<group>";
 		};
-		4DAD10FC245812EA00834874 /* ListJournalView */ = {
+		4DAD10FC245812EA00834874 /* ListJournal */ = {
 			isa = PBXGroup;
 			children = (
+				4DA7462124532061001BB930 /* MainView.swift */,
 				4DA74627245396B8001BB930 /* ListDatePickerView.swift */,
 				4DA7462324538F36001BB930 /* DatePickerView.swift */,
 				4D5A34002450D3DA000B526F /* PostView.swift */,
@@ -132,7 +156,7 @@
 				4DAD10FD2458135C00834874 /* JournalView.swift */,
 				4D2CE1FD2459725C0058761E /* FaqBannerView.swift */,
 			);
-			path = ListJournalView;
+			path = ListJournal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
