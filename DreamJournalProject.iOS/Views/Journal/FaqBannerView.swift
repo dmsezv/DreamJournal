@@ -14,7 +14,7 @@ struct FaqBannerView: View {
             Image("faq_banner")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(height: 171)
+                .frame(height: 126)
                 .cornerRadius(28)
                 .edgesIgnoringSafeArea([.top, .bottom])
             HStack {
@@ -28,7 +28,7 @@ struct FaqBannerView: View {
                         .multilineTextAlignment(.trailing)
                         .padding([.top, .trailing], 24)
                     
-                    Text("READ ME")
+                    Text("READ MORE")
                         .font(.system(size: 11, weight: .bold, design: .default))
                         .frame(width: 97, height: 31)
                         .background(Color("banner.text"))
@@ -39,7 +39,7 @@ struct FaqBannerView: View {
                 }
             }
         }
-        .frame(height: 171)
+        .frame(height: 126)
     }
 }
 

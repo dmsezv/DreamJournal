@@ -54,12 +54,5 @@ struct JournalView: View {
 struct JournalView_Previews: PreviewProvider {
     static var previews: some View {
         JournalView()
-        /*
-         Image("background_image")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .background(Color("dj.background"))
-            .edgesIgnoringSafeArea([.top, .bottom])
-         */
     }
 }
