@@ -75,10 +75,10 @@ struct ContentView: View {
                 ListDatePickerView()
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 24, trailing: 0))
                 
-                ForEach(1...20, id: \.self) { _ in
-                    PostView()
-                        .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
-                }
+//                ForEach(1...20, id: \.self) { _ in
+//                    NotesRow()
+//                        .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
+//                }
                 
             }
             .navigationBarTitle("Dream journal")

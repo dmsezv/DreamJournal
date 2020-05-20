@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct FaqBannerView: View {
+struct FaqBanner: View {
     var body: some View {
         ZStack {
             Image("faq_banner")
@@ -40,11 +40,15 @@ struct FaqBannerView: View {
             }
         }
         .frame(height: 126)
+        .onTapGesture {
+            
+        }
     }
 }
 
 struct FaqBannerView_Previews: PreviewProvider {
     static var previews: some View {
-        FaqBannerView()
+        FaqBanner()
+            .previewLayout(.fixed(width: 500, height: 200))
     }
 }

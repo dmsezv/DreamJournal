@@ -11,7 +11,6 @@ import Foundation
 
 struct DreamNote {
     var id: Int
-    
     var dateCreate: Date
     var dateUpdate: Date
     var isLucidDream: Bool

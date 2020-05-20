@@ -11,6 +11,7 @@ import SwiftUI
 struct TabBarView: View {
     
     @ObservedObject var viewRouter = ViewRouter()
+    @State var isPresentedAddnewNote = false
     
     var body: some View {
         GeometryReader { geometry in
@@ -26,10 +27,8 @@ struct TabBarView: View {
                 
                 if self.viewRouter.currentView == "journal" {
                     JournalView()
-                } else if self.viewRouter.currentView == "profile" {
-                    ProfileView()
                 } else {
-                    AddNoteView()
+                    ProfileView()
                 }
                 
                 Spacer()
@@ -53,6 +52,13 @@ struct TabBarView: View {
                             .frame(width: 62, height: 62)
                             .foregroundColor(Color("dj.purpule"))
                             .shadow(color: Color("dj.purpule.shadow"), radius: 5, x: 0, y: 10)
+                            .onTapGesture {
+                                self.isPresentedAddnewNote.toggle()
+                            }
+                            .sheet(isPresented: self.$isPresentedAddnewNote) {
+                                DreamNoteView()
+                            }
+                        
                         Image("tab.plus")
                             .resizable()
                             .frame(width: 18, height: 18)
@@ -76,7 +82,7 @@ struct TabBarView: View {
                     }
                 }
                 .frame(width: geometry.size.width, height: geometry.size.height/10)
-                .background(Color.white)
+                .background(Color("tabbar.background"))
             }
         }
         .edgesIgnoringSafeArea(.bottom)

@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D2CE1FE2459725C0058761E /* FaqBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2CE1FD2459725C0058761E /* FaqBannerView.swift */; };
-		4D50A60E246DBF5100404107 /* ListNotesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D50A60D246DBF5100404107 /* ListNotesInteractor.swift */; };
+		4D00A4DF24746B010063ED5D /* DreamNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00A4DE24746B010063ED5D /* DreamNoteView.swift */; };
+		4D1DAD4824729AD900A782DB /* ListNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DAD4724729AD900A782DB /* ListNotesViewModel.swift */; };
+		4D2CE1FE2459725C0058761E /* FaqBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2CE1FD2459725C0058761E /* FaqBanner.swift */; };
 		4D5A33ED2450AE6D000B526F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A33EC2450AE6D000B526F /* AppDelegate.swift */; };
 		4D5A33EF2450AE6D000B526F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A33EE2450AE6D000B526F /* SceneDelegate.swift */; };
 		4D5A33F12450AE6D000B526F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A33F02450AE6D000B526F /* ContentView.swift */; };
 		4D5A33F32450AE70000B526F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A33F22450AE70000B526F /* Assets.xcassets */; };
 		4D5A33F62450AE70000B526F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A33F52450AE70000B526F /* Preview Assets.xcassets */; };
 		4D5A33F92450AE70000B526F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5A33F72450AE70000B526F /* LaunchScreen.storyboard */; };
-		4D5A34012450D3DA000B526F /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34002450D3DA000B526F /* PostView.swift */; };
+		4D5A34012450D3DA000B526F /* NotesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A34002450D3DA000B526F /* NotesRow.swift */; };
 		4D66290524574B63001E1D7E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D66290424574B63001E1D7E /* TabBarView.swift */; };
 		4D9344F12451F53300AB8C5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9344F02451F53300AB8C5B /* Extensions.swift */; };
 		4DA7462224532061001BB930 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA7462124532061001BB930 /* MainView.swift */; };
@@ -26,7 +27,6 @@
 		4DAD10F92458090900834874 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD10F82458090900834874 /* ProfileView.swift */; };
 		4DAD10FB24580BBC00834874 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD10FA24580BBC00834874 /* AddNoteView.swift */; };
 		4DAD10FE2458135C00834874 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DAD10FD2458135C00834874 /* JournalView.swift */; };
-		4DD45CB8246E747000A15437 /* ListNotesWebRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD45CB7246E747000A15437 /* ListNotesWebRepository.swift */; };
 		4DD586E724688139007111DE /* DreamNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD586E624688139007111DE /* DreamNote.swift */; };
 		4DD586E92468828F007111DE /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD586E82468828F007111DE /* AudioFile.swift */; };
 		4DD586EB246882B9007111DE /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD586EA246882B9007111DE /* ImageFile.swift */; };
@@ -34,8 +34,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4D2CE1FD2459725C0058761E /* FaqBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqBannerView.swift; sourceTree = "<group>"; };
-		4D50A60D246DBF5100404107 /* ListNotesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesInteractor.swift; sourceTree = "<group>"; };
+		4D00A4DE24746B010063ED5D /* DreamNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamNoteView.swift; sourceTree = "<group>"; };
+		4D1DAD4724729AD900A782DB /* ListNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesViewModel.swift; sourceTree = "<group>"; };
+		4D2CE1FD2459725C0058761E /* FaqBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqBanner.swift; sourceTree = "<group>"; };
 		4D5A33E92450AE6D000B526F /* DreamJournalProject.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamJournalProject.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5A33EC2450AE6D000B526F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D5A33EE2450AE6D000B526F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +45,7 @@
 		4D5A33F52450AE70000B526F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4D5A33F82450AE70000B526F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D5A33FA2450AE70000B526F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D5A34002450D3DA000B526F /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		4D5A34002450D3DA000B526F /* NotesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesRow.swift; sourceTree = "<group>"; };
 		4D66290424574B63001E1D7E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		4D9344F02451F53300AB8C5B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4DA7462124532061001BB930 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -55,7 +56,6 @@
 		4DAD10F82458090900834874 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4DAD10FA24580BBC00834874 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
 		4DAD10FD2458135C00834874 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
-		4DD45CB7246E747000A15437 /* ListNotesWebRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesWebRepository.swift; sourceTree = "<group>"; };
 		4DD586E624688139007111DE /* DreamNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamNote.swift; sourceTree = "<group>"; };
 		4DD586E82468828F007111DE /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
 		4DD586EA246882B9007111DE /* ImageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
@@ -73,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D00A4DD24746AE40063ED5D /* DreamNote */ = {
+			isa = PBXGroup;
+			children = (
+				4D00A4DE24746B010063ED5D /* DreamNoteView.swift */,
+			);
+			path = DreamNote;
+			sourceTree = "<group>";
+		};
 		4D057A1B245B48DD002AF77E /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +108,7 @@
 		4D50A609246DBE1F00404107 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4D00A4DD24746AE40063ED5D /* DreamNote */,
 				4D66290624574B6E001E1D7E /* TabBar */,
 				4DAD10FC245812EA00834874 /* Journal */,
 				4D057A1B245B48DD002AF77E /* Profile */,
@@ -111,7 +120,6 @@
 		4D50A60A246DBE3B00404107 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				4DD45CB7246E747000A15437 /* ListNotesWebRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -128,7 +136,6 @@
 		4D50A60C246DBF2000404107 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				4D50A60D246DBF5100404107 /* ListNotesInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 				4D50A60A246DBE3B00404107 /* Repositories */,
 				4D50A609246DBE1F00404107 /* Views */,
 				4DD586E5246880C7007111DE /* Models */,
+				4D7F74C02471E70A009319F0 /* ViewModels */,
 				4D057A1D245B4904002AF77E /* Extension */,
 				4DAD10F32457FD3600834874 /* Resourses */,
 				4D50A60B246DBEEF00404107 /* System */,
@@ -183,6 +191,14 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		4D7F74C02471E70A009319F0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4D1DAD4724729AD900A782DB /* ListNotesViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		4DAD10F32457FD3600834874 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,10 +214,10 @@
 				4DA7462124532061001BB930 /* MainView.swift */,
 				4DA74627245396B8001BB930 /* ListDatePickerView.swift */,
 				4DA7462324538F36001BB930 /* DatePickerView.swift */,
-				4D5A34002450D3DA000B526F /* PostView.swift */,
-				4D5A33F02450AE6D000B526F /* ContentView.swift */,
+				4D5A34002450D3DA000B526F /* NotesRow.swift */,
 				4DAD10FD2458135C00834874 /* JournalView.swift */,
-				4D2CE1FD2459725C0058761E /* FaqBannerView.swift */,
+				4D2CE1FD2459725C0058761E /* FaqBanner.swift */,
+				4D5A33F02450AE6D000B526F /* ContentView.swift */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -290,24 +306,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D66290524574B63001E1D7E /* TabBarView.swift in Sources */,
+				4D1DAD4824729AD900A782DB /* ListNotesViewModel.swift in Sources */,
 				4D9344F12451F53300AB8C5B /* Extensions.swift in Sources */,
 				4DA7462224532061001BB930 /* MainView.swift in Sources */,
 				4D5A33ED2450AE6D000B526F /* AppDelegate.swift in Sources */,
 				4D5A33EF2450AE6D000B526F /* SceneDelegate.swift in Sources */,
 				4DAD10F72458088F00834874 /* ViewRouter.swift in Sources */,
 				4DAD10FB24580BBC00834874 /* AddNoteView.swift in Sources */,
-				4D2CE1FE2459725C0058761E /* FaqBannerView.swift in Sources */,
+				4D2CE1FE2459725C0058761E /* FaqBanner.swift in Sources */,
 				4DAD10FE2458135C00834874 /* JournalView.swift in Sources */,
 				4DA7462424538F36001BB930 /* DatePickerView.swift in Sources */,
-				4D5A34012450D3DA000B526F /* PostView.swift in Sources */,
+				4D5A34012450D3DA000B526F /* NotesRow.swift in Sources */,
 				4DA74628245396B8001BB930 /* ListDatePickerView.swift in Sources */,
 				4DD586E92468828F007111DE /* AudioFile.swift in Sources */,
 				4DD586EB246882B9007111DE /* ImageFile.swift in Sources */,
 				4DD586ED246883AD007111DE /* MockedData.swift in Sources */,
 				4DD586E724688139007111DE /* DreamNote.swift in Sources */,
+				4D00A4DF24746B010063ED5D /* DreamNoteView.swift in Sources */,
 				4DAD10F92458090900834874 /* ProfileView.swift in Sources */,
-				4DD45CB8246E747000A15437 /* ListNotesWebRepository.swift in Sources */,
-				4D50A60E246DBF5100404107 /* ListNotesInteractor.swift in Sources */,
 				4D5A33F12450AE6D000B526F /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +465,7 @@
 				DEVELOPMENT_TEAM = 64MBB6D8RY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DreamJournalProject.iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +486,7 @@
 				DEVELOPMENT_TEAM = 64MBB6D8RY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DreamJournalProject.iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
