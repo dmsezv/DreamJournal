@@ -31,6 +31,7 @@
 		4DD586E92468828F007111DE /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD586E82468828F007111DE /* AudioFile.swift */; };
 		4DD586EB246882B9007111DE /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD586EA246882B9007111DE /* ImageFile.swift */; };
 		4DD586ED246883AD007111DE /* MockedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD586EC246883AD007111DE /* MockedData.swift */; };
+		4DEAA2B2247572750059715E /* NoteNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAA2B1247572750059715E /* NoteNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		4DD586E82468828F007111DE /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
 		4DD586EA246882B9007111DE /* ImageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFile.swift; sourceTree = "<group>"; };
 		4DD586EC246883AD007111DE /* MockedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockedData.swift; sourceTree = "<group>"; };
+		4DEAA2B1247572750059715E /* NoteNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				4D00A4DE24746B010063ED5D /* DreamNoteView.swift */,
+				4DEAA2B1247572750059715E /* NoteNavBar.swift */,
 			);
 			path = DreamNote;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				4D1DAD4824729AD900A782DB /* ListNotesViewModel.swift in Sources */,
 				4D9344F12451F53300AB8C5B /* Extensions.swift in Sources */,
 				4DA7462224532061001BB930 /* MainView.swift in Sources */,
+				4DEAA2B2247572750059715E /* NoteNavBar.swift in Sources */,
 				4D5A33ED2450AE6D000B526F /* AppDelegate.swift in Sources */,
 				4D5A33EF2450AE6D000B526F /* SceneDelegate.swift in Sources */,
 				4DAD10F72458088F00834874 /* ViewRouter.swift in Sources */,

@@ -32,6 +32,7 @@ struct TabBarView: View {
                 }
                 
                 Spacer()
+                
                 HStack {
                     VStack {
                         Image("tab.journal")
@@ -56,7 +57,7 @@ struct TabBarView: View {
                                 self.isPresentedAddnewNote.toggle()
                             }
                             .sheet(isPresented: self.$isPresentedAddnewNote) {
-                                DreamNoteView()
+                                DreamNoteView(index: 0)
                             }
                         
                         Image("tab.plus")

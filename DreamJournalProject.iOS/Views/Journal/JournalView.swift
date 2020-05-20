@@ -21,6 +21,9 @@ struct JournalView: View {
     
     var listNotes = DreamNote.mockedData
     
+    @State var isNoteOpen = false
+    @State var selectedNoteIndex: Int = 0
+    
     var body: some View {
        VStack {
             List {
@@ -48,15 +51,27 @@ struct JournalView: View {
                 ForEach(0..<listNotes.count, id: \.self) { index in
                     NotesRow(dreamNote: self.listNotes[index])
                         .listRowInsets(EdgeInsets(top: 0, leading: 24, bottom: 12, trailing: 24))
+                        .onTapGesture {
+                            self.selectedNoteIndex = index
+                            self.isNoteOpen.toggle()
+                    }
                 }
+            }
+            .sheet(isPresented: $isNoteOpen) {
+                DreamNoteView(index: self.selectedNoteIndex)
             }
         }
        .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
 
+#if DEBUG
+
 struct JournalView_Previews: PreviewProvider {
     static var previews: some View {
         JournalView()
+            .background(Color.blue)
     }
 }
+
+#endif
