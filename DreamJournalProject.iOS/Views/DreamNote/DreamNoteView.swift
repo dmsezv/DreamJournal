@@ -17,12 +17,12 @@ struct DreamNoteView: View {
     
     var body: some View {
         GeometryReader { geometry in
-                   
-           Image("background_image")
-               .resizable()
-               .aspectRatio(contentMode: .fill)
-               .background(Color("dj.background"))
-               .edgesIgnoringSafeArea([.top, .bottom])
+            
+            Image("background_image")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .background(Color("dj.background"))
+                .edgesIgnoringSafeArea([.top, .bottom])
             
             VStack {
                 //Navigation Bar
@@ -30,21 +30,35 @@ struct DreamNoteView: View {
                 
                 ScrollView {
                     VStack(alignment: .leading) {
-                    Text("Sunday")
-                        .font(.system(size: 34, weight: .bold, design: .default))
-                        .foregroundColor(Color.white)
-                        .padding(.bottom, 4)
-                    Text("2019 December, 15")
-                        .font(.system(size: 17, weight: .regular, design: .default))
-                        .foregroundColor(Color(red: 129/255, green: 131/255, blue: 186/255))
-                    
-                    Text("\(self.index)")
-                
-                
-                Spacer()
-                
-                
-                    TextField("", text: self.$text)
+                        VStack(alignment: .leading) {
+                            Text("Sunday")
+                                .font(.system(size: 34, weight: .bold, design: .default))
+                                .foregroundColor(Color.white)
+                                .padding(.bottom, 4)
+                            Text("2019 December, 15")
+                                .font(.system(size: 17, weight: .regular, design: .default))
+                                .foregroundColor(Color(red: 129/255, green: 131/255, blue: 186/255))
+                        }
+                        
+                        
+                        
+                        
+                        HStack {
+                            Text("Lucid dream")
+                                .font(.system(size: 15))
+                                .foregroundColor(Color.white)
+                            
+                            Spacer()
+                            
+                            Image("note.add_image")
+                                .padding(.trailing, 17)
+                            Image("note.add_audio")
+                        }
+                        //.frame(width: geometry.size.width, height: 30, alignment: .leading)
+                        .padding(.top, 30)
+                        .padding([.leading, .trailing], 24)
+                        
+                        TextField("", text: self.$text)
                     }
                 }
             }
