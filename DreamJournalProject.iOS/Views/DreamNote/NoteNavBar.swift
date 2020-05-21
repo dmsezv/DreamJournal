@@ -22,7 +22,8 @@ struct NoteNavBar: View {
                     HStack {
                         Image("nav.back")
                             .foregroundColor(Color(red: 181/255, green: 129/255, blue: 243/255))
-                        .frame(width: 18, height: 29, alignment: .center)
+                            .frame(width: 18, height: 29, alignment: .center)
+                            .rotationEffect(Angle(degrees: 270))
                     }
                 }
                 
@@ -30,16 +31,16 @@ struct NoteNavBar: View {
                 
                 if !self.isEditing {
                     Image("nav.share")
-                    .frame(width: 18, height: 29, alignment: .center)
+                        .frame(width: 18, height: 29, alignment: .center)
                         .padding(.trailing, 25)
                     Image("nav.delete")
-                    .frame(width: 18, height: 29, alignment: .center)
+                        .frame(width: 18, height: 29, alignment: .center)
                 } else {
                     Image("nav.share")
-                    .frame(width: 18, height: 29, alignment: .center)
+                        .frame(width: 18, height: 29, alignment: .center)
                         .padding(.trailing, 25)
                     Image("nav.delete")
-                    .frame(width: 18, height: 29, alignment: .center)
+                        .frame(width: 18, height: 29, alignment: .center)
                 }
             }
             .padding(.top, 30)

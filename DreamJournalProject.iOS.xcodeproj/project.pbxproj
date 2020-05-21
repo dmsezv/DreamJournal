@@ -10,6 +10,8 @@
 		4D00A4DF24746B010063ED5D /* DreamNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D00A4DE24746B010063ED5D /* DreamNoteView.swift */; };
 		4D1DAD4824729AD900A782DB /* ListNotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1DAD4724729AD900A782DB /* ListNotesViewModel.swift */; };
 		4D2CE1FE2459725C0058761E /* FaqBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2CE1FD2459725C0058761E /* FaqBanner.swift */; };
+		4D46CFC82476D788009B9985 /* NoteAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46CFC72476D788009B9985 /* NoteAudio.swift */; };
+		4D46CFCA2476DF89009B9985 /* LucidDreamToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D46CFC92476DF89009B9985 /* LucidDreamToggle.swift */; };
 		4D5A33ED2450AE6D000B526F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A33EC2450AE6D000B526F /* AppDelegate.swift */; };
 		4D5A33EF2450AE6D000B526F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A33EE2450AE6D000B526F /* SceneDelegate.swift */; };
 		4D5A33F12450AE6D000B526F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5A33F02450AE6D000B526F /* ContentView.swift */; };
@@ -38,6 +40,8 @@
 		4D00A4DE24746B010063ED5D /* DreamNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamNoteView.swift; sourceTree = "<group>"; };
 		4D1DAD4724729AD900A782DB /* ListNotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotesViewModel.swift; sourceTree = "<group>"; };
 		4D2CE1FD2459725C0058761E /* FaqBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqBanner.swift; sourceTree = "<group>"; };
+		4D46CFC72476D788009B9985 /* NoteAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAudio.swift; sourceTree = "<group>"; };
+		4D46CFC92476DF89009B9985 /* LucidDreamToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LucidDreamToggle.swift; sourceTree = "<group>"; };
 		4D5A33E92450AE6D000B526F /* DreamJournalProject.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamJournalProject.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5A33EC2450AE6D000B526F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D5A33EE2450AE6D000B526F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			children = (
 				4D00A4DE24746B010063ED5D /* DreamNoteView.swift */,
 				4DEAA2B1247572750059715E /* NoteNavBar.swift */,
+				4D46CFC72476D788009B9985 /* NoteAudio.swift */,
+				4D46CFC92476DF89009B9985 /* LucidDreamToggle.swift */,
 			);
 			path = DreamNote;
 			sourceTree = "<group>";
@@ -309,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D66290524574B63001E1D7E /* TabBarView.swift in Sources */,
+				4D46CFCA2476DF89009B9985 /* LucidDreamToggle.swift in Sources */,
 				4D1DAD4824729AD900A782DB /* ListNotesViewModel.swift in Sources */,
 				4D9344F12451F53300AB8C5B /* Extensions.swift in Sources */,
 				4DA7462224532061001BB930 /* MainView.swift in Sources */,
@@ -324,6 +331,7 @@
 				4DA74628245396B8001BB930 /* ListDatePickerView.swift in Sources */,
 				4DD586E92468828F007111DE /* AudioFile.swift in Sources */,
 				4DD586EB246882B9007111DE /* ImageFile.swift in Sources */,
+				4D46CFC82476D788009B9985 /* NoteAudio.swift in Sources */,
 				4DD586ED246883AD007111DE /* MockedData.swift in Sources */,
 				4DD586E724688139007111DE /* DreamNote.swift in Sources */,
 				4D00A4DF24746B010063ED5D /* DreamNoteView.swift in Sources */,

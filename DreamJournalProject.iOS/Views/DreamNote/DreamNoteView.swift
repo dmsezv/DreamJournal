@@ -22,43 +22,64 @@ struct DreamNoteView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .background(Color("dj.background"))
-                .edgesIgnoringSafeArea([.top, .bottom])
             
             VStack {
                 //Navigation Bar
                 NoteNavBar(isEditing: self.isEditing)
-                
-                ScrollView {
-                    VStack(alignment: .leading) {
+                GeometryReader { geometrySV in
+                    ScrollView(.vertical) {
+                        
                         VStack(alignment: .leading) {
-                            Text("Sunday")
-                                .font(.system(size: 34, weight: .bold, design: .default))
-                                .foregroundColor(Color.white)
-                                .padding(.bottom, 4)
-                            Text("2019 December, 15")
-                                .font(.system(size: 17, weight: .regular, design: .default))
-                                .foregroundColor(Color(red: 129/255, green: 131/255, blue: 186/255))
-                        }
-                        
-                        
-                        
-                        
-                        HStack {
-                            Text("Lucid dream")
-                                .font(.system(size: 15))
-                                .foregroundColor(Color.white)
+                            VStack(alignment: .leading) {
+                                Text("Sunday")
+                                    .font(.system(size: 34, weight: .bold, design: .default))
+                                    .foregroundColor(Color.white)
+                                    .padding(.bottom, 4)
+                                Text("2019 December, 15")
+                                    .font(.system(size: 17, weight: .regular, design: .default))
+                                    .foregroundColor(Color(red: 129/255, green: 131/255, blue: 186/255))
+                            }
+                            .padding(.leading, 24)
                             
-                            Spacer()
                             
-                            Image("note.add_image")
-                                .padding(.trailing, 17)
-                            Image("note.add_audio")
+                            
+                            
+                            HStack {
+                                LucidDreamToggle()
+                                Text("Lucid dream")
+                                    .font(.system(size: 15))
+                                    .foregroundColor(Color.white)
+                                
+                                Spacer()
+                                
+                                Image("note.add_image")
+                                    .padding(.trailing, 17)
+                                Image("note.add_audio")
+                            }
+                            .padding(.top, 30)
+                            .padding([.leading, .trailing], 24)
+                            
+                            
+                            VStack (alignment: .leading){
+                                NoteAudio()
+                                    .padding(.bottom, 25)
+                                
+                                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum")
+                                    .font(.system(size: 17))
+                                    .foregroundColor(Color("notesrow.text"))
+                                    .padding(.bottom, 24)
+                                    
+                                Image("test_image")
+                                    .resizable()
+                                    .scaledToFit()
+                                
+                                Spacer()
+                            }
+                            .padding([.top, .leading, .trailing], 25)
+                            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+                            .background(Color("dj.purpule.row"))
+                            .cornerRadius(42)
                         }
-                        //.frame(width: geometry.size.width, height: 30, alignment: .leading)
-                        .padding(.top, 30)
-                        .padding([.leading, .trailing], 24)
-                        
-                        TextField("", text: self.$text)
                     }
                 }
             }

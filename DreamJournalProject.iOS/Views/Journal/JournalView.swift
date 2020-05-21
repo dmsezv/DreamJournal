@@ -54,7 +54,7 @@ struct JournalView: View {
                         .onTapGesture {
                             self.selectedNoteIndex = index
                             self.isNoteOpen.toggle()
-                    }
+                        }
                 }
             }
             .sheet(isPresented: $isNoteOpen) {
@@ -64,6 +64,7 @@ struct JournalView: View {
        .edgesIgnoringSafeArea([.top, .bottom])
     }
 }
+
 
 #if DEBUG
 

@@ -42,7 +42,7 @@ struct NotesRow: View {
                 .padding(.trailing, 16)
         }
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 88, maxHeight: 88)
-        .background(Color(red: 44/255, green: 33/255, blue: 57/255))
+        .background(Color("dj.purpule.row"))
         .cornerRadius(16)
     }
 }
